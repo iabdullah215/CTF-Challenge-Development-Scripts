@@ -11,7 +11,7 @@ In this challange there were three attachments. A `flag-genrator.sh`, `data` fil
 ## Bing Chilling
 **Catagory:** `Forensics`
 
-In this challange there were was image by the name `flag.jpg` was given. I created a python script that takes a `JPG` image file as input, applies a left circular 
+In this challange there was an image by the name `flag.jpg` given. I created a python script that takes a `JPG` image file as input, applies a left circular 
 shift to the binary data of the image, and then saves the modified image as `flag.jpg`. The 
 left circular shift operation involves shifting each byte of the image data from one 
 position to the left, with the last byte wrapping around to the beginning. Now in order to fix the image you write a script that would fix the image.
