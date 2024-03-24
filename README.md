@@ -16,7 +16,7 @@ shift to the binary data of the image, and then saves the modified image as `fla
 left circular shift operation involves shifting each byte of the image data from one 
 position to the left, with the last byte wrapping around to the beginning. Now in order to fix the image you write a script that would fix the image.
 
-## T3r1pl3 Thr34
+## T3r1pl3 Thr34t
 **Catagory:** `Crypto`
 
 In this challenge a script is given that you have reverse inorder to get the flag. The script begins by reading the contents of a file named `flag.txt`, which contains the `flag`. Then, it generates three large prime numbers (`p`, `q`, and `r`) with `1024 bits` each using the `getPrime` function from the `Crypto.Util.number` library. These prime numbers are then used to calculate three RSA modulo (`n1`, `n2`, and `n3`) by multiplying pairs of these prime numbers together. After generating the modulo, it sets `e` to `65537` which is a commonly used value in RSA encryption. Then, it converts the `flag` into a long integer using the `bytes_to_long` function. Next, the script iterates over each modulus and encrypts the `flag` using RSA encryption. Each modulus `n` raises the plaintext to the power of `e` modulo `n`. This operation is repeated for each modulus, resulting in multiple Cipher Texts. Finally, the script prints the encrypted message to the terminal and writes the generated public keys (`n1`, `n2`, and `n3`), the public exponent `e`, and the cipher text `c` to a file named `public-key.txt`.
