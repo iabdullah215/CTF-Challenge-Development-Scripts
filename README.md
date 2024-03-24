@@ -27,17 +27,13 @@ In this challenge a script is given that you have reverse inorder to get the fla
 In this challenge a C++ script was given which employs a Caesar cipher encryption technique. It defines a function `Flag` to encrypt a given string using a provided key. The main function initializes a `key` array with zeros and encrypts the string using this `key`, resulting in no encryption due to the key being all zeros. Therefore, the output remains the same as the input string. The player has to change the key in a way that it would change the string into a flag. The accurate key is provided blow.
 
 ``` key
-
 const int key[] = {0, 4, 0, -9, 0, 0, 8, 0, -14, 0, 21, 0, -9, 0, -6, 0, -2, 0, 4, 0}
-
 ```
 
 **Flag**
 
 ``` key
-
 ┌──(MnM@kali)-[~/Desktop/CTFs/AIRange/Reverse]
 └─$ ./script.cpp
 Your Flag Is: flagfumbledtilldeath
-
 ```
