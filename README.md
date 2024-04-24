@@ -1,5 +1,5 @@
-# AIRange-CTF-Scripts
-I recently had the opportunity to create some CTF Challenges for the [AIRange](https://airange.online/). It was a training platform set by the [Air University Cyber Security Society](http://www.aucss.live) for the students. I developed challenges in the `Ohsint`, `Forensics`, `Cryptography`, `Steganography`, and `Reversing` categories. Here are all the scripts that I used in the development of these challenges.
+# CTF-Challenge-Development-Scripts
+I recently have been developing CTF Challenges for many platforms. I developed challenges in the `Ohsint`, `Forensics`, `Cryptography`, `Steganography`, and `Reversing` categories. Here are some of the scripts that I used in the development of these challenges.
 
 # Challenge Descriptions
 
