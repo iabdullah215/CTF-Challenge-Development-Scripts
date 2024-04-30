@@ -21,18 +21,26 @@ position to the left, with the last byte wrapping around to the beginning. Now i
 
 In this challenge a script is given that you have reverse inorder to get the flag. The script begins by reading the contents of a file named `flag.txt`, which contains the `flag`. Then, it generates three large prime numbers (`p`, `q`, and `r`) with `1024 bits` each using the `getPrime` function from the `Crypto.Util.number` library. These prime numbers are then used to calculate three RSA modulo (`n1`, `n2`, and `n3`) by multiplying pairs of these prime numbers together. After generating the modulo, it sets `e` to `65537` which is a commonly used value in RSA encryption. Then, it converts the `flag` into a long integer using the `bytes_to_long` function. Next, the script iterates over each modulus and encrypts the `flag` using RSA encryption. Each modulus `n` raises the plaintext to the power of `e` modulo `n`. This operation is repeated for each modulus, resulting in multiple Cipher Texts. Finally, the script prints the encrypted message to the terminal and writes the generated public keys (`n1`, `n2`, and `n3`), the public exponent `e`, and the cipher text `c` to a file named `public-key.txt`.
 
+**Flag**
+
+```console
+┌──(MnM@kali)-[~/Desktop/CTFs/AIRange/Crypto]
+└─$ python3 decrypt.py
+TRUSTLINE{1_gu3ss_tr1pl3_rs4_1snt_tr1pl3_s3cur3}
+```
+
 ## Tweak
 **Catagory:** `Reversing`
 
 In this challenge a C++ script was given which employs a Caesar cipher encryption technique. It defines a function `Flag` to encrypt a given string using a provided key. The main function initializes a `key` array with zeros and encrypts the string using this `key`, resulting in no encryption due to the key being all zeros. Therefore, the output remains the same as the input string. The player has to change the key in a way that it would change the string into a flag. The accurate key is provided blow.
 
-``` key
+```C++
 const int key[] = {0, 4, 0, -9, 0, 0, 8, 0, -14, 0, 21, 0, -9, 0, -6, 0, -2, 0, 4, 0}
 ```
 
 **Flag**
 
-``` key
+```console
 ┌──(MnM@kali)-[~/Desktop/CTFs/AIRange/Reverse]
 └─$ ./script.cpp
 Your Flag Is: flagfumbledtilldeath
