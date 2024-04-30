@@ -1,4 +1,4 @@
-# CTF-Challenge-Development-Scripts
+# CTF Challenge Development Scripts
 I recently have been developing CTF Challenges for many platforms. I developed challenges in the `Ohsint`, `Forensics`, `Cryptography`, `Steganography`, and `Reversing` categories. Here are some of the scripts that I used in the development of these challenges.
 
 # Challenge Descriptions
