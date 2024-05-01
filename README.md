@@ -11,6 +11,7 @@ In this challenge there were three attachments. A `flag-genrator.sh`, `data` fil
 
 ## Bing Chilling
 **Catagory:** `Forensics`
+**Patforms:** AIRange
 
 In this challenge there was an image by the name `flag.jpg` given. I created a python script that takes a `JPG` image file as input, applies a left circular 
 shift to the binary data of the image, and then saves the modified image as `flag.jpg`. The 
