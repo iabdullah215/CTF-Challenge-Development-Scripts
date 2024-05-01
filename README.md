@@ -33,6 +33,7 @@ TRUSTLINE{1_gu3ss_tr1pl3_rs4_1snt_tr1pl3_s3cur3}
 
 ## Tweak
 **Catagory:** `Reversing`
+**Patforms:** AIRange
 
 In this challenge a C++ script was given which employs a Caesar cipher encryption technique. It defines a function `Flag` to encrypt a given string using a provided key. The main function initializes a `key` array with zeros and encrypts the string using this `key`, resulting in no encryption due to the key being all zeros. Therefore, the output remains the same as the input string. The player has to change the key in a way that it would change the string into a flag. The accurate key is provided blow.
 
