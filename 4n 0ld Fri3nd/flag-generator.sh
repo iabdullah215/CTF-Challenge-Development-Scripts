@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Function to generate a random string (no longer used)
 generate_random_string() {
     characters='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
@@ -13,13 +14,15 @@ generate_random_string() {
     echo "$string"
 }
 
+# Encryption flag variable
+flag="flag{3456jhbr5ijigr657yuhjbhfgtr57689uiojbhgcy6}"
+
 # Loop only once
 for (( i=1; i<=1; i++ )); do
     file_name="encrypted_data_$(date +%s%N | sha256sum | base64 | head -c 8).txt"
 
-    random_string=$(generate_random_string)
-
-    encrypted_string=$(echo "$random_string" | openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -salt -a -k AUCSS)
+    # Encrypt the flag variable
+    encrypted_string=$(echo "$flag" | openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -salt -a -k TRUSTLINE)
 
     echo "$encrypted_string" > "$file_name"
 
