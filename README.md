@@ -6,9 +6,17 @@ I recently have been developing CTF Challenges for many platforms. I developed c
 ## 4n 0ld Fri3nd
 **Catagory:** `Crypto`
 
-**Patforms:** AIRange
+**Patforms:** TRUSTLINE
 
 In this challenge there were three attachments. A `flag-genrator.sh`, `data` file, and `hint.txt`. In the `data` file there are 50 files containing randomly generated strings encrypted with `AES-256-CBC` encryption algorithm. Each file name consists of the prefix `encrypted_data_` followed by a unique identifier generated using the current timestamp hashed with `SHA-256` and then `Base64` encoded. The content of each file is a randomly generated string of length between `8` and `12` characters, encrypted using `AES-256-CBC` algorithm with a key `AUCSS` and saved as a text file. These file were created by the `data-genrator.sh` scripts. Now in the `hint.txt` file there is a story that tells the player about a `SHA-256` hash. So in order to find the correct file contaning the flag you have to calculate `SHA-256` hash of all the files in the `data` folder and then find the one that matches the `SHA-256` hash given in the `hint.txt`. Now inorder to decode the flag you have to reverse the `flag-genrator.sh` script.
+
+**Flag**
+
+```console
+┌──(MnM@kali)-[~/Desktop/CTFs/TRUSTLINE/Crypto]
+└─$ ./decrypt.sh files/encrypted_data_ZThlM2Qw.txt     
+Decrypted flag: TRUSTLINE{Working_hard_is_the_key_to_success_my_fr1end}
+```
 
 ## Bing Chilling
 **Catagory:** `Forensics`
@@ -30,7 +38,7 @@ In this challenge a script is given that you have reverse inorder to get the fla
 **Flag**
 
 ```console
-┌──(MnM@kali)-[~/Desktop/CTFs/AIRange/Crypto]
+┌──(MnM@kali)-[~/Desktop/CTFs/TRUSTLINE/Crypto]
 └─$ python3 decrypt.py
 TRUSTLINE{1_gu3ss_tr1pl3_rs4_1snt_tr1pl3_s3cur3}
 ```
