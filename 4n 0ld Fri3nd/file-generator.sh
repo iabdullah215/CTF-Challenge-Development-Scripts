@@ -18,7 +18,7 @@ for (( i=1; i<=20; i++ )); do
 
     random_string=$(generate_random_string)
 
-    encrypted_string=$(echo "$random_string" | openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -salt -a -k AUCSS)
+    encrypted_string=$(echo "$random_string" | openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -salt -a -k TRUSTLINE)
 
     echo "$encrypted_string" > "$file_name"
 
