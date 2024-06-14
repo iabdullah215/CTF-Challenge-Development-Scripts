@@ -1,0 +1,9 @@
+Define a function that generates a random string of length between 8 and 12 characters.
+Loop 100 times to:
+Generate a unique file name based on the current date and time.
+Generate a random string by calling the function.
+Encrypt the random string using AES-XXX-CBC encryption with 100000 iterations, and a salt, using "---------" as the key.
+Write the encrypted string to a file with the generated file name.
+
+
+I guess I forgot the key XD...
