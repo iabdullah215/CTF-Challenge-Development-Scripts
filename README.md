@@ -58,3 +58,10 @@ const int key[] = {0, 4, 0, -9, 0, 0, 8, 0, -14, 0, 21, 0, -9, 0, -6, 0, -2, 0, 
 └─$ ./script.cpp
 Your Flag Is: flagfumbledtilldeath
 ```
+
+## Os and 1s
+**Catagory:** `BarCode`
+
+**Patforms:** Hackathon Training Workshop 2024
+
+In this challenge a `rawdata.txt` file has been given as a lead. In this file there is RGB value of an image. This file was created by using the `break.py` script. In order to convert the RGB values into image you have to write a script like `create.py`. Upon running the file you'll have an image of a BarCode and after scanning this BarCode you'll have the flag.
