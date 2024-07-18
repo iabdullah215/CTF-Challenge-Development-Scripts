@@ -80,3 +80,17 @@ In this challenge a script is given that you have reverse inorder to get the fla
 └─$ python3 decrypt.py
 flag{double_R54_i5_double_h4rd}
 ```
+
+## Baby-step Giant-step
+**Catagory:** `BarCode`
+
+**Patforms:** Hackathon Training Workshop 2024
+
+In this challenge the player has to perfom meet-in-the-middle attack in order to get the flag (value of `X`). Upon running the `flager.py` script player would get the flag as follow.
+
+```console
+┌──(MnM@kali)-[~/Desktop/CTFs/Hackathon/Crypto]
+└─$ python3 flager.py
+finding x...
+Flag =  375374217830
+```
