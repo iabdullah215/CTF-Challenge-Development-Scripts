@@ -91,6 +91,6 @@ In this challenge the player has to perfom meet-in-the-middle attack in order to
 ```console
 ┌──(MnM@kali)-[~/Desktop/CTFs/Hackathon/Crypto]
 └─$ python3 flager.py
-finding x...
+finding Flag...
 Flag =  375374217830
 ```
