@@ -65,3 +65,18 @@ Your Flag Is: flagfumbledtilldeath
 **Patforms:** Hackathon Training Workshop 2024
 
 In this challenge a `rawdata.txt` file has been given as a lead. In this file there is RGB value of an image. This file was created by using the `break.py` script. In order to convert the RGB values into image you have to write a script like `create.py`. Upon running the file you'll have an image of a BarCode and after scanning this BarCode you'll have the flag.
+
+## Double Trouble
+**Catagory:** `Crypto`
+
+**Patforms:** Hackathon Training Workshop 2024
+
+In this challenge a script is given that you have reverse inorder to get the flag. The script begins by reading the contents of a file named `flag.txt`, which contains the `flag`. Then, it generates three large prime numbers (`p`, `q`, and `r`) with `1024 bits` each using the `getPrime` function from the `Crypto.Util.number` library. These prime numbers are then used to calculate two RSA modulo (`n1` and `n2`) by multiplying pairs of these prime numbers together. After generating the modulo, it sets `e` to `65537` which is a commonly used value in RSA encryption. Then, it converts the `flag` into a long integer using the `bytes_to_long` function. Next, the script iterates over each modulus and encrypts the `flag` using RSA encryption. Each modulus `n` raises the plaintext to the power of `e` modulo `n`. This operation is repeated for each modulus, resulting in multiple Cipher Texts. Finally, the script prints the encrypted message to the terminal and writes the generated public keys (`n1` and `n2`), the public exponent `e`, and the cipher text `c` to a file named `public-key.txt`.
+
+**Flag:**
+
+```console
+┌──(MnM@kali)-[~/Desktop/CTFs/Hackathon/Crypto]
+└─$ python3 decrypt.py
+flag{double_R54_i5_double_h4rd}
+```
