@@ -82,7 +82,7 @@ flag{double_R54_i5_double_h4rd}
 ```
 
 ## Baby-step Giant-step
-**Catagory:** `BarCode`
+**Catagory:** `Crypto`
 
 **Patforms:** Hackathon Training Workshop 2024
 
