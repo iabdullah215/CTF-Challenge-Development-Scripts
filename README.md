@@ -99,3 +99,14 @@ Flag =  375374217830
 **Catagory:** `Crypto`
 
 **Patforms:** TRUSTLINE
+
+The "70s RSA" challenge is a cryptography puzzle that involves decrypting an RSA-encrypted message by reverse-engineering given values. The challenge provides a `.txt` file with RSA parameters, which the player must analyze to create a decryption script. Understanding RSA encryption, modular arithmetic, and polynomial algebra are key skills needed. The solution involves determining the prime factors 
+`p` and `q`, deriving the private key, and decrypting the ciphertext. The challenge is categorized as easy, and successful completion demonstrates proficiency in cryptographic analysis, mathematical problem-solving, and using tools like SageMath.
+
+**Flag:**
+
+```console
+┌──(MnM@kali)-[~/Desktop/CTFs/TrustLine/Crypto/70s RSA]
+└─$ sage solve.sage
+TRUSTLINE{R5A_IS_STUCK_IN_THE_SEVENTIES}
+```​
